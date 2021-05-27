@@ -29,7 +29,7 @@ public class SmallHeap {
 
     private static void adjustHeap(int[] arr, int parent, int length) {
         int temp = arr[parent];
-        int child = parent * 2 + 1;
+        int child = 2 * parent + 1;
         while (child < length) {
             if (child + 1 < length && arr[child + 1] < arr[child]) {
                 child++;
@@ -39,10 +39,8 @@ public class SmallHeap {
             }
             arr[parent] = arr[child];
             parent = child;
-            child = parent * 2 + 1;
+            child = 2 * child + 1;
         }
         arr[parent] = temp;
     }
-
-
 }
