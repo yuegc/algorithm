@@ -1,4 +1,4 @@
-package linkedlist;
+package com.algorithm.linkedlist;
 
 /**
  * @author: yuegc
