@@ -7,11 +7,11 @@ package linkedlist;
  */
 public class LinkedList {
     public static class Node {
-        private final int value;
-        private Node next;
+        int data;
+        Node next;
 
-        Node(int value) {
-            this.value = value;
+        Node(int data) {
+            this.data = data;
         }
     }
 
@@ -39,13 +39,13 @@ public class LinkedList {
             p1 = p1.next;
             p2 = p2.next;
         }
-        return p1.value;
+        return p1.data;
     }
 
     public static void main(String[] args) {
         int[] array = new int[]{3,5,8,1,4,9,7,6,2,0};
         Node head = buildLinkedList(array);
-        int value = findNNode(head, 1);
-        System.out.println(value);
+        int data = findNNode(head, 2);
+        System.out.println(data);
     }
 }
