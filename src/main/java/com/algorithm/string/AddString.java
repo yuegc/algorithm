@@ -5,11 +5,11 @@ import java.util.Scanner;
 /**
  * @author: yuegc
  * @Date: 2021/5/31 15:22
- * @Description: 两个未知数字字符串相加
+ * @Description: 两个未知数字字符串相加 思路：将字符串反转，然后从左往右加，满10进1
  */
 public class AddString {
     public static  String add(String string1,String string2) {
-        //反转字符串,从最小为往上加
+        //反转字符串,从最小位往上加
         StringBuffer s1 = new StringBuffer(string1).reverse();
         StringBuffer s2 = new StringBuffer(string2).reverse();
         StringBuffer res = new StringBuffer();

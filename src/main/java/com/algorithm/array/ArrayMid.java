@@ -20,22 +20,22 @@ public class ArrayMid {
         while (len1 >= 0 && len2 >= 0) {
             if (arr1[len1] > arr2[len2]) {
                 array[k] = arr1[len1];
-                len1 --;
+                len1--;
             } else {
                 array[k] = arr2[len2];
-                len2 --;
+                len2--;
             }
-            k --;
+            k--;
         }
         while (len2 >= 0) {
             array[k] = arr1[len2];
-            len2 --;
-            k --;
+            len2--;
+            k--;
         }
         while (len1 >= 0) {
             array[k] = arr1[len1];
-            len1 --;
-            k --;
+            len1--;
+            k--;
         }
         int len = array.length;
         if (len % 2 == 0) {
