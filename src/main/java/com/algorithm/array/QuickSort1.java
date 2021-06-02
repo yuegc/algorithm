@@ -20,7 +20,7 @@ public class QuickSort1 {
         quickSort(arr, pivotIndex + 1, endIndex);
     }
 
-    /*** 分治（双边循环法）
+    /** 分治（双边循环法）
      * @param arr 待交换的数组
      * @param startIndex 起始下标
      * @param endIndex 结束下标
