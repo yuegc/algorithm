@@ -24,7 +24,8 @@ public class QuickSort2 {
      ** @param arr 待交换的数组
      * @param startIndex 起始下标
      * @param endIndex 结束下标
-     * @return */
+     * @return
+     */
     private static int partition(int[] arr, int startIndex, int endIndex) {
         // 取第1个位置（也可以选择随机位置）的元素作为基准元素
         int pivot = arr[startIndex];
